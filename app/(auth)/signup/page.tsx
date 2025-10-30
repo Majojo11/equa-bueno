@@ -8,22 +8,18 @@ export default function SignupPage() {
       <h2 className="text-2xl font-bold mb-6 text-gray-800">REGISTRARSE</h2>
 
       <div className="flex flex-col w-80 gap-4">
-        <Input label="Email" type="email" isRequired variant="flat" classNames={{ inputWrapper: "bg-gray-200 rounded-md", label: "text-gray-600", }}
-        />
-        <Input label="Contraseña" type="password" isRequired variant="flat" classNames={{ inputWrapper: "bg-gray-200 rounded-md", label: "text-gray-600", }}
-        />
-        <Input label="Repetir contraseña" type="password" isRequired variant="flat" classNames={{ inputWrapper: "bg-gray-200 rounded-md", label: "text-gray-600", }}
-        />
-        <Button className="bg-gray-300 text-black font-semibold hover:bg-gray-400 transition" variant="flat">
-          Registrarse
-        </Button>
+        <Input label="Email" type="email" isRequired className="bg-gray-200 rounded-md"/>
+        <Input label="Username" type="username" isRequired className="bg-gray-200 rounded-md"/>
+        <Input label="Password" type="password" isRequired className="bg-gray-200 rounded-md"/>
+
+        <Button className="bg-gray-300 text-black font-semibold hover:bg-gray-400 transition">Registrarse</Button>
       </div>
 
       <p className="mt-6 text-sm text-gray-700">
         ¿Ya tienes una cuenta?{" "}
         <Link
           href="/auth/login"
-          className="text-blue-600 hover:underline font-semibold"
+          className="text-gray-600 hover:underline font-semibold"
         >
           Iniciar sesión
         </Link>

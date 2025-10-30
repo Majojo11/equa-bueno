@@ -31,7 +31,8 @@ export default function LoginPage(){
         return;
     }
     return (
-    <form className="bg-gray-500 px-10 py-2 rounded-md" onSubmit={handleSubmit}>
+    /*ver cuadro*/
+    <form className="bg-gray-300 px-10 py-2 rounded-md" onSubmit={handleSubmit}>
         <p className="text-2xl my-4 text-white">Iniciar sesión</p>
 
         <div className="flex flex-col gap-2 my-4 items-center">
@@ -46,7 +47,7 @@ export default function LoginPage(){
             disabled={submitting}>
                 {submitting? <Spinner size='md'/> : "Iniciar sesión"}
             </Button>
-            <p className="text-white">¿No tienes cuenta? <Link href="/signup" className="text-red-600 underline">Registrate</Link></p>
+            <p className="text-white">¿No tienes cuenta? <Link href="/signup" className="text-gray-600 underline">Registrate</Link></p>
         </div>
     </form>
     )
