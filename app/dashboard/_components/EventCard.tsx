@@ -5,14 +5,9 @@ import { Event } from "@/entities";
 
 export default function EventCard({ event }: { event: Event }) {
     return(
-        <div className="p-10">
-            <Card className="hover:scale-110 transition-all w-[150px] h-[100px]">
+        <div className=" bg-[#F0F0F0] p-5">
+            <Card className="bg-[#F0F0F0] transition-all w-[250px] h-[50px]">
             <CardHeader><b>{event.eventName}</b></CardHeader>
-            <Divider/>
-            <CardBody>
-                <p>{event.eventDescription}</p>
-                {/* <p><b>Participantes:</b> {event.participants?.length}</p> */}
-            </CardBody>
             </Card>
         </div>
     )
